@@ -1,16 +1,15 @@
 #include <stdio.h>
 
 struct chessCell {
-    int color; 
+    int color;
     char figure[4];
 };
 
 void stringCopy(char* out, char* inp, int len)
 {
-	for(int i = 0; i<len; ++i)
-		{
-			out[i] = inp[i];
-		}
+    for (int i = 0; i < len; ++i) {
+        out[i] = inp[i];
+    }
 }
 
 void chessPrint(struct chessCell chessState[8][8])
